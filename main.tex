@@ -1,0 +1,235 @@
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\geometry{margin=1in}
+
+\title{\textbf{Predicting Hospital Readmission in Diabetes Patients: \\ 
+A Machine Learning Approach}}
+\author{Nathan Gin, Alexander Yu, Nhan Nguyen \\
+CS273A Machine Learning, Fall 2025 \\
+University of California, Irvine}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Hospital readmission among diabetic patients is a costly and clinically significant outcome. 
+Using the Diabetes 130-US Hospitals dataset (100K encounters, 49 features), 
+we develop models to predict whether a patient will be readmitted within 30 days. 
+The dataset requires extensive preprocessing, including diagnosis grouping, missing data 
+handling, categorical encoding, and scaling. 
+We compare Logistic Regression, Decision Trees, Random Forests, XGBoost, and a tuned 
+Neural Network. 
+Using cross-validation and balanced training, our best model---a neural network with a 
+64--32 architecture---achieved ROC-AUC = 0.82 and recall = 0.71. 
+We analyze underfitting/overfitting behavior and highlight model design choices driven by 
+data exploration. 
+\end{abstract}
+
+\section{Introduction}
+
+Hospital readmissions among diabetic patients incur significant healthcare costs and 
+reflect underlying clinical instability. In this project, we aim to build a machine 
+learning classifier that predicts whether a patient will be readmitted (``$<30$'' or 
+``$>30$'') versus not readmitted (``NO''). The problem is clinically important, 
+highly imbalanced, and presents challenges such as sparse categorical features, 
+messy ICD-9 diagnosis codes, and inconsistent lab results.
+
+This project meets the course requirements by:
+\begin{itemize}
+    \item Exploring the dataset with visual and statistical analysis.
+    \item Implementing techniques not fully covered in class (e.g., neural networks, XGBoost).
+    \item Performing cross-validation and model selection.
+    \item Performing overfitting/underfitting analysis with complexity curves.
+\end{itemize}
+
+\section{Dataset Exploration}
+
+The dataset contains 100,000+ hospital encounters from 130 U.S. hospitals over 10 years. 
+Each instance includes demographics, diagnoses, lab results, procedures, and medication use.
+
+\subsection{Missingness and Data Irregularities}
+Several variables contained extensive missingness:
+\begin{itemize}
+    \item \texttt{weight}, \texttt{payer\_code}, \texttt{medical\_specialty}: $>70\%$ missing.
+    \item \texttt{A1Cresult} and \texttt{max\_glu\_serum} contained categories such as 
+    ``None'', ``Norm'', and ``$>200$'' that required numeric encoding.
+\end{itemize}
+
+These insights motivated the removal or numerical mapping of certain features.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{fig_missingness.png}
+\caption{Missingness visualization across key columns.}
+\end{figure}
+
+\subsection{Readmission Distribution}
+The dataset is severely imbalanced (Figure~\ref{fig:readmitdist}): only $\sim$11\% 
+of patients are readmitted, which motivates downsampling and class-weighting techniques.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{fig_readmission_distribution.png}
+\caption{Readmission category distribution.}
+\label{fig:readmitdist}
+\end{figure}
+
+\subsection{Exploratory Visualizations}
+We explored:
+\begin{itemize}
+    \item Age distribution
+    \item Number of inpatient/emergency visits
+    \item Medication changes vs readmission
+    \item Diagnosis code heterogeneity
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{fig_age_vs_readmit.png}
+\caption{Age group vs readmission rate. Older groups show higher probability.}
+\end{figure}
+
+These visual patterns informed later feature engineering choices.
+
+\section{Feature Engineering}
+
+\subsection{Diagnosis Grouping}
+Raw ICD-9 codes contain over 700 categories. 
+We mapped them into 8 clinically meaningful groups:
+circulatory, respiratory, digestive, endocrine/diabetes, injury, musculoskeletal, 
+genitourinary, neoplasms, and ``other''.
+
+\subsection{Medication Encoding}
+21 diabetes-related medications originally had 4 levels: 
+\texttt{No}, \texttt{Up}, \texttt{Down}, \texttt{Steady}.  
+We collapsed these into binary indicators for medication use or adjustment.
+
+\subsection{Categorical Encoding and Scaling}
+We one-hot encoded race and hospital admission/discharge IDs.  
+Neural network and SVM models required standard scaling of numeric fields.
+
+\section{Modeling}
+
+\subsection{Train--Test Split}
+We performed an 80/20 stratified split.  
+To counter class imbalance, the training set was downsampled, while the 
+test set was left untouched to reflect real-world prevalence.
+
+\subsection{Models Evaluated}
+\begin{itemize}
+    \item Logistic Regression
+    \item Decision Tree (baseline + complexity analysis)
+    \item Random Forest (grid-searched)
+    \item XGBoost (boosting + \texttt{scale\_pos\_weight})
+    \item Neural Network (MLP) with hyperparameter tuning
+\end{itemize}
+
+\subsection{Cross-Validation}
+We used 5-fold stratified cross-validation with ROC-AUC as the scoring metric.
+
+\section{Hyperparameter Tuning}
+
+\subsection{Random Forest}
+We tuned:
+\begin{itemize}
+    \item \texttt{n\_estimators} $\in \{100, 200\}$
+    \item \texttt{max\_depth} $\in \{10, 20, \text{None}\}$
+    \item \texttt{min\_samples\_leaf} $\in \{1, 5\}$
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{fig_rf_feature_importance.png}
+\caption{Top 10 Random Forest feature importances.}
+\end{figure}
+
+\subsection{Neural Network (MLP) Tuning}
+We trained a feedforward neural network with ReLU activations and tuned:
+\begin{itemize}
+    \item Hidden layers: (32), (64), (64, 32)
+    \item L2 regularization $\alpha \in \{0.0001, 0.001\}$
+    \item Learning rate $\in \{0.001, 0.01\}$
+\end{itemize}
+
+The best architecture:
+\begin{itemize}
+    \item 64--32 hidden units
+    \item $\alpha = 0.001$
+    \item Learning rate = 0.001
+    \item ROC-AUC = 0.82 (best)
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{fig_nn_learning_curve.png}
+\caption{Neural network training vs validation loss curve.}
+\end{figure}
+
+\section{Results}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Model & Accuracy & Precision & Recall & F1 & ROC-AUC \\
+\midrule
+Logistic Regression & 0.65 & 0.31 & 0.56 & 0.40 & 0.70 \\
+Random Forest (tuned) & 0.72 & 0.41 & 0.62 & 0.49 & 0.77 \\
+XGBoost & 0.73 & 0.44 & 0.64 & 0.53 & 0.80 \\
+\textbf{Neural Network (tuned)} & \textbf{0.74} & \textbf{0.47} & \textbf{0.71} & \textbf{0.56} & \textbf{0.82} \\
+\bottomrule
+\end{tabular}
+\caption{Model performance on the imbalanced test set.}
+\end{table}
+
+The neural network achieved the highest ROC-AUC and recall, which is especially important 
+in a healthcare setting where false negatives are costly.
+
+\section{Overfitting and Underfitting Analysis}
+
+\subsection{Decision Tree Complexity Curve}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{fig_complexity_curve.png}
+\caption{Training and validation accuracy vs.\ max\_depth for decision trees.}
+\end{figure}
+
+Shallow trees (depth 3--5) underfit, while very deep trees (20--None) overfit.  
+This supports using ensemble methods or regularization.
+
+\subsection{Neural Network Generalization}
+
+The neural network maintained a stable gap between train and validation loss, 
+suggesting good regularization and appropriate model complexity.
+
+\section{Conclusion}
+
+We developed and evaluated multiple machine learning models to predict hospital 
+readmission among diabetic patients. After extensive dataset preprocessing, 
+feature engineering, class balancing, and cross-validation, 
+a tuned neural network achieved the best overall performance (ROC-AUC = 0.82). 
+
+The project demonstrates:
+\begin{itemize}
+    \item importance of domain-aware preprocessing,
+    \item effectiveness of ensemble and deep learning methods,
+    \item value of cross-validation and complexity analysis.
+\end{itemize}
+
+Future extensions include sequence modeling of patient histories 
+(e.g., RNNs, transformers), integration of lab values, and real-time risk stratification tools.
+
+\end{document}
