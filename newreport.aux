@@ -5,30 +5,31 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}Data and Preprocessing}{1}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Dataset and target definition}{1}{subsection.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Raw readmission categories (NO, $<30$, $>30$).}}{2}{figure.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Age group vs.\ readmission, suggesting higher risk in older patients.}}{2}{figure.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Raw readmission categories.}}{2}{figure.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Age group vs.\ readmission, suggests higher risk in older patients.}}{2}{figure.2}\protected@file@percent }
 \newlabel{fig:eda1}{{2.1}{2}{Dataset and target definition}{figure.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Missingness and feature design}{2}{subsection.2.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Missingness in the 15 most affected columns. Extremely sparse features were dropped.}}{3}{figure.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Top Random Forest feature importances, highlighting utilization and diagnosis variables.}}{3}{figure.4}\protected@file@percent }
-\newlabel{fig:missing}{{2.2}{3}{Missingness and feature design}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Missingness in the 15 most affected columns.}}{2}{figure.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Correlation matrix of key numeric clinical variables.}}{2}{figure.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Train--test split and balancing}{3}{subsection.2.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3}Models and Hyperparameter Selection}{3}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Logistic Regression}{3}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Random Forests}{4}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Random Forests}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Top Random Forest features. Prior inpatient use most important.}}{3}{figure.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Random Forest CV ROC--AUC over a grid of \texttt  {max\_depth} and \texttt  {n\_estimators}.}}{3}{figure.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Support Vector Machine (RBF)}{4}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Multilayer Perceptron (MLP)}{5}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Multilayer Perceptron (MLP)}{4}{subsection.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces SVM (RBF) tuning: $C$ and $\gamma $.}}{4}{figure.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces MLP tuning: $\alpha $ and learning rate.}}{4}{figure.8}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4}Validation, Complexity, and Results}{5}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Under- and over-fitting}{5}{subsection.4.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Decision tree complexity curve: deep trees overfit (train accuracy rises, validation accuracy falls).}}{5}{figure.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces MLP complexity curve: larger networks give only small gains before slightly overfitting.}}{5}{figure.6}\protected@file@percent }
-\newlabel{fig:complex}{{4.1}{5}{Under- and over-fitting}{figure.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Test-set performance}{6}{subsection.4.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Test-set performance. Values are rounded to two decimals.}}{6}{table.1}\protected@file@percent }
-\newlabel{tab:results}{{1}{6}{Test-set performance. Values are rounded to two decimals}{table.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Model comparison across accuracy, precision, recall, F1, and ROC--AUC.}}{6}{figure.7}\protected@file@percent }
-\newlabel{fig:modelcomp}{{7}{6}{Model comparison across accuracy, precision, recall, F1, and ROC--AUC}{figure.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces ROC curves for Logistic Regression, tuned Random Forest, and tuned MLP on the test set.}}{7}{figure.8}\protected@file@percent }
-\newlabel{fig:roc}{{8}{7}{ROC curves for Logistic Regression, tuned Random Forest, and tuned MLP on the test set}{figure.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion and Conclusion}{7}{section.5}\protected@file@percent }
-\gdef \@abspage@last{8}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Under-fitting and Over-fitting}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Decision tree complexity curve: deep trees overfit.}}{5}{figure.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces MLP complexity curve: larger networks give small gains before overfitting.}}{5}{figure.10}\protected@file@percent }
+\newlabel{fig:complex}{{4.1}{5}{Under-fitting and Over-fitting}{figure.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Test-set performance}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Test performance. Values are rounded to two decimals.}}{6}{table.1}\protected@file@percent }
+\newlabel{tab:results}{{1}{6}{Test performance. Values are rounded to two decimals}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Comparison of accuracy, precision, recall, F1, and ROC--AUC for all models.}}{6}{figure.11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces ROC curves for Logistic Regression, tuned Random Forest, and tuned MLP.}}{6}{figure.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion and Conclusion}{6}{section.5}\protected@file@percent }
+\gdef \@abspage@last{6}
