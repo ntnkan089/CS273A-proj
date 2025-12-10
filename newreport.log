@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.15)  9 DEC 2025 14:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.8.15)  9 DEC 2025 16:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/aznga/Desktop/CS 273 Project/CS273A-proj/main.tex"
-(c:/Users/aznga/Desktop/CS 273 Project/CS273A-proj/main.tex
+**"c:/Users/aznga/Desktop/CS 273 Project/CS273A-proj/newreport.tex"
+(c:/Users/aznga/Desktop/CS 273 Project/CS273A-proj/newreport.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
 (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
@@ -140,6 +140,25 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen166
 \Gm@layoutvoffset=\dimen167
 \Gm@dimlist=\toks25
+) (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen168
+\lightrulewidth=\dimen169
+\cmidrulewidth=\dimen170
+\belowrulesep=\dimen171
+\belowbottomsep=\dimen172
+\aboverulesep=\dimen173
+\abovetopsep=\dimen174
+\cmidrulesep=\dimen175
+\cmidrulekern=\dimen176
+\defaultaddspace=\dimen177
+\@cmidla=\count299
+\@cmidlb=\count300
+\@aboverulesep=\dimen178
+\@belowrulesep=\dimen179
+\@thisruleclass=\count301
+\@lastruleclass=\count302
+\@thisrulewidth=\dimen180
 ) (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -169,16 +188,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count299
+\c@section@level=\count303
 ) (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count300
+\etb@tempcnta=\count304
 ) (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen168
-\Hy@linkcounter=\count301
-\Hy@pagecounter=\count302
+\@linkdim=\dimen181
+\Hy@linkcounter=\count305
+\Hy@pagecounter=\count306
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -186,7 +205,7 @@ Now handling font encoding PD1 ...
 ) (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count303
+\Hy@SavedSpaceFactor=\count307
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -199,21 +218,21 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count304
+\c@Hy@tempcnt=\count308
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen169
+\XeTeXLinkMargin=\dimen182
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count305
-\Field@Width=\dimen170
-\Fld@charsize=\dimen171
+\Fld@menulength=\count309
+\Field@Width=\dimen183
+\Fld@charsize=\dimen184
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -221,15 +240,15 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count306
-\c@Item=\count307
-\c@Hfootnote=\count308
+\Hy@abspage=\count310
+\c@Item=\count311
+\c@Hfootnote=\count312
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count309
-\c@bookmark@seq@number=\count310
+\Fld@listcount=\count313
+\c@bookmark@seq@number=\count314
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -238,55 +257,30 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip54
-) (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen172
-\lightrulewidth=\dimen173
-\cmidrulewidth=\dimen174
-\belowrulesep=\dimen175
-\belowbottomsep=\dimen176
-\aboverulesep=\dimen177
-\abovetopsep=\dimen178
-\cmidrulesep=\dimen179
-\cmidrulekern=\dimen180
-\defaultaddspace=\dimen181
-\@cmidla=\count311
-\@cmidlb=\count312
-\@aboverulesep=\dimen182
-\@belowrulesep=\dimen183
-\@thisruleclass=\count313
-\@lastruleclass=\count314
-\@thisrulewidth=\dimen184
-) (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip55
-\multirow@cntb=\count315
-\multirow@dima=\skip56
-\bigstrutjot=\dimen185
 ) (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count316
-) (./main.aux)
-\openout1 = `main.aux'.
+\l__color_backend_stack_int=\count315
+) (./newreport.aux)
+\openout1 = `newreport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -327,91 +321,100 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 22.
-(./main.out) (./main.out)
+Package hyperref Info: Link coloring OFF on input line 17.
+(./newreport.out) (./newreport.out)
 \@outlinefile=\write3
-\openout3 = `main.out'.
+\openout3 = `newreport.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
  (c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<fig_missingness.png, id=88, 569.9694pt x 353.6412pt>
-File: fig_missingness.png Graphic file (type png)
-<use fig_missingness.png>
-Package pdftex.def Info: fig_missingness.png  used on input line 74.
-(pdftex.def)             Requested size: 328.82707pt x 204.0328pt.
-
 
 [1
 
 {c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<fig_readmission_distribution.png, id=103, 425.6703pt x 281.3712pt>
+<fig_readmission_distribution.png, id=73, 425.6703pt x 281.3712pt>
 File: fig_readmission_distribution.png Graphic file (type png)
 <use fig_readmission_distribution.png>
-Package pdftex.def Info: fig_readmission_distribution.png  used on input line 84.
-(pdftex.def)             Requested size: 281.85587pt x 186.31093pt.
-
-
-[2 <./fig_missingness.png> <./fig_readmission_distribution.png>]
-<fig_age_vs_readmit.png, id=113, 570.2103pt x 281.3712pt>
+Package pdftex.def Info: fig_readmission_distribution.png  used on input line 65.
+(pdftex.def)             Requested size: 220.78543pt x 145.94463pt.
+<fig_age_vs_readmit.png, id=75, 570.2103pt x 281.3712pt>
 File: fig_age_vs_readmit.png Graphic file (type png)
 <use fig_age_vs_readmit.png>
-Package pdftex.def Info: fig_age_vs_readmit.png  used on input line 100.
-(pdftex.def)             Requested size: 422.77664pt x 208.6236pt.
-
-
-[3 <./fig_age_vs_readmit.png>]
-<fig_rf_feature_importance.png, id=120, 570.2103pt x 353.6412pt>
+Package pdftex.def Info: fig_age_vs_readmit.png  used on input line 70.
+(pdftex.def)             Requested size: 220.78543pt x 108.94434pt.
+<fig_missingness.png, id=77, 569.9694pt x 353.6412pt>
+File: fig_missingness.png Graphic file (type png)
+<use fig_missingness.png>
+Package pdftex.def Info: fig_missingness.png  used on input line 98.
+(pdftex.def)             Requested size: 220.78543pt x 136.98598pt.
+<fig_rf_feature_importance.png, id=78, 570.2103pt x 353.6412pt>
 File: fig_rf_feature_importance.png Graphic file (type png)
 <use fig_rf_feature_importance.png>
-Package pdftex.def Info: fig_rf_feature_importance.png  used on input line 154.
-(pdftex.def)             Requested size: 375.80544pt x 233.08012pt.
+Package pdftex.def Info: fig_rf_feature_importance.png  used on input line 103.
+(pdftex.def)             Requested size: 220.78543pt x 136.92662pt.
 
+
+[2 <./fig_readmission_distribution.png> <./fig_age_vs_readmit.png>]
+
+[3 <./fig_missingness.png> <./fig_rf_feature_importance.png>]
 
 [4]
-<fig_nn_learning_curve.png, id=125, 497.9403pt x 281.3712pt>
-File: fig_nn_learning_curve.png Graphic file (type png)
-<use fig_nn_learning_curve.png>
-Package pdftex.def Info: fig_nn_learning_curve.png  used on input line 176.
-(pdftex.def)             Requested size: 352.31625pt x 199.08371pt.
-
-
-[5 <./fig_rf_feature_importance.png>]
-<fig_complexity_curve.png, id=132, 425.6703pt x 281.3712pt>
+<fig_complexity_curve.png, id=103, 425.6703pt x 281.3712pt>
 File: fig_complexity_curve.png Graphic file (type png)
 <use fig_complexity_curve.png>
-Package pdftex.def Info: fig_complexity_curve.png  used on input line 206.
-(pdftex.def)             Requested size: 352.31625pt x 232.88974pt.
+Package pdftex.def Info: fig_complexity_curve.png  used on input line 211.
+(pdftex.def)             Requested size: 220.78543pt x 145.94463pt.
+<fig_mlp_complexity.png, id=104, 424.7067pt x 281.3712pt>
+File: fig_mlp_complexity.png Graphic file (type png)
+<use fig_mlp_complexity.png>
+Package pdftex.def Info: fig_mlp_complexity.png  used on input line 216.
+(pdftex.def)             Requested size: 220.78543pt x 146.27094pt.
 
 
-[6 <./fig_nn_learning_curve.png>]
+[5 <./fig_complexity_curve.png> <./fig_mlp_complexity.png>]
+<fig_model_comparison.png, id=116, 642.4803pt x 281.6121pt>
+File: fig_model_comparison.png Graphic file (type png)
+<use fig_model_comparison.png>
+Package pdftex.def Info: fig_model_comparison.png  used on input line 253.
+(pdftex.def)             Requested size: 375.80544pt x 164.72308pt.
+<fig_roc_curves.png, id=118, 425.6703pt x 353.6412pt>
+File: fig_roc_curves.png Graphic file (type png)
+<use fig_roc_curves.png>
+Package pdftex.def Info: fig_roc_curves.png  used on input line 266.
+(pdftex.def)             Requested size: 305.33789pt x 253.67714pt.
 
-[7 <./fig_complexity_curve.png>] (./main.aux)
+
+[6 <./fig_model_comparison.png>]
+
+[7 <./fig_roc_curves.png>]
+
+[8] (./newreport.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 452584A4AD19E61107AE4F630C7323E7;3357.
+Package rerunfilecheck Info: File `newreport.out' has not changed.
+(rerunfilecheck)             Checksum: 01055DEDD5133EB8160E588016B00583;2580.
  ) 
 Here is how much of TeX's memory you used:
- 10113 strings out of 469797
- 156021 string characters out of 5480962
- 566569 words of memory out of 5000000
- 38335 multiletter control sequences out of 15000+600000
- 635661 words of font info for 73 fonts, out of 8000000 for 9000
+ 10073 strings out of 469797
+ 155457 string characters out of 5480962
+ 566040 words of memory out of 5000000
+ 38299 multiletter control sequences out of 15000+600000
+ 637696 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,8n,79p,337b,511s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (7 pages, 613893 bytes).
+ 75i,12n,79p,336b,511s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/aznga/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on newreport.pdf (8 pages, 893814 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
